@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Kewin Marchand" />
+    <meta name="description" content="portfolio" />
+    <meta property="og:title" content="portfolio Kewin Marchand" />
+    <meta property="og:type" content="portfolio"/>
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <title>Portfolio kewin Marchand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body id="page_top" data-spy="scroll" data-target="#nav" ng-app="myApp" ng-controller="PortfolioCtrl"	
+    <main>
+      <section class="preloader" id="preloader">
+        <figure id="animation" class="d-flex justify-content-center align-items-center">
+          <loader></loader>
+        </figure>
+      </section><!-- /.preloader -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img class="wow bounce" data-wow-delay="2s" src="{{logo}}" alt="Logo {{author}}" title="Logo de {{author}}" height="60">
+            <p class="d-none d-md-inline-block m-0 pl-2">{{author}}</p>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <menu-list id="nav" class="nav ml-auto"></menu-list>
+          </div>
+        </nav><!-- /.navbar -->
+      <header class="home" id="home">
+        <div class="home-content d-flex flex-column justify-content-center align-items-center">
+          <h1 class="home_title text-center d-lg-none">{{author}}</h1>
+          <h2 class="home_subtitle text-center d-lg-none">{{job}}</h2>	
+          <ul class="text_list d-none d-lg-block" title="Animation CSS 3 - Transform + Keyframes">
+            <li class="lines_container">
+              <p class="line">{{authorSurname}}</p>
+              <p class="line">{{authorName}}</p>
+              <p class="line">{{job}}</p> 
+            </li>
+            <li class="lines_container">
+              <p class="line">{{authorName}}</p>
+              <p class="line">{{job}}</p> 
+              <p class="line">{{authorSurname}}</p>
+            </li>
+            <li class="lines_container">
+              <p class="line">{{job}}</p>  
+              <p class="line">{{authorSurname}}</p>
+              <p class="line">{{authorName}}</p>
+            </li>
+          </ul> 
+        </div><!-- /.home-content -->        
+      </header><!-- /#home -->
+      <section class="skills container border-b py-5 wow fadeInUpBig" id="skills" data-wow-offset="200">
+        <skill-list></skill-list>
+      </section>
+      <section class="about container pt-5" id="about">	
+        <header class="text-center">
+          <h2 class="section_header_title">A Propos</h2>
+          <separateur></separateur>
+          <h3 class="section_header_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        </header>
+        <div class="row">
+          <div class="progress-bars-container col-md-4">
+            <progress-list></progress-list>
+          </div>
+          <ul class="about-list col-md-8 row">
+            <li class="col-md-6" ng-repeat="about in aboutContent">
+              <p class="about_text wow fadeInRight" data-wow-offset="300">{{about.text}}</p>
+            </li>
+          </ul>
+         </div>
+      </section><!-- /#about -->
+      <section class="facts container-fluid m-0 p-0" id="facts">
+          <div class="section_overlay m-0">
+          <div class="row">
+            <div class="facts_container col-lg-6 wow fadeIn" data-wow-offset="200">
+              <fact-list></fact-list>
+            </div>
+            <div class="mockup_container col-lg-5 col-lg-offset-1 wow fadeIn" data-wow-offset="200">
+              <div class="imac">
+                <img class="" src="http://www.kewinmarchand.fr/img/portfolio/imac.png" alt="Mockup" title="Mise en situation">
+              </div>
+            </div>
+          </div> 
+        </div><!-- /.section_overlay -->   
+       </section><!-- /#facts -->
+      <section class="charts container border-b wow fadeIn" id="charts" data-wow-offset="300">
+        <div class="row">
+          <figure class="chart col-md-6 my-5 p-5">
+            <canvas id="graphicChart" class="p-3"></canvas>
+          </figure>
+          <figure class="chart col-md-6 my-5 p-5">
+            <canvas id="devChart" class="p-3"></canvas>
+          </figure>
+        </div>
+      </section><!-- /#charts -->
+      <section class="langages container" id="slideshow">
+        <figure class="langages_container wow fadeInDownBig"  data-wow-offset="300" title="Animation CSS 3- Slideshow">
+          <langage-list></langage-list>
+        </figure>
+      </section><!-- /#slideshow -->
+      <section class="cta container-fluid p-5" id="cta">
+          <div class="cta_container container wow fadeIn" data-wow-offset="150">
+          <header>
+            <h2 class="cta_title">a la recherche d'un designer web ?</h2>			
+          </header>
+          <div class="row mt-5">
+            <p class="cta_text col-md-8">Proin fringilla augue at maximus vestibulum.</p>
+              <div class="col-md-3 offset-md-1 d-flex align-center">
+              <a class="cta_link smooth" href="#contact">
+                 <button type="button" class="cta-btn btn">Contact</button>
+              </a>    
+              </div><!-- /.cta -->
+          </div>
+        </div>
+      </section><!-- /#cta <-->
+      <section class="works_section container-fluid pt-5" id="works">
+        <header class="text-center">
+          <h2 class="section_header_title">Mes derniers travaux</h2>
+          <separateur></separateur>
+          <h3 class="section_header_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        </header><!-- /.works_title -->	
+        <work-list></work-list>
+      </section><!-- /#works -->	
+      <section class="contact container pt-5" id="contact">			
+        <header class="col-md-12 text-center">
+          <h2 class="section_header_title">restons en contact</h2>
+          <separateur></separateur>
+          <h3 class="section_header_subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        </header>
+        <div class="row">
+            <address class="contact_info_container col-lg-3 wow fadeInLeft" data-wow-offset="100">
+            <ul class="row">
+                <li class="contact_info col-xs-4 col-md-12">
+                  <h3 class="contact_info-title mb-1">Téléphone</h3>
+                  <p class="contact_info-text">{{phone}}</p>
+                </li>
+                <li class="contact_info col-xs-4 col-md-12">
+                  <h3 class="contact_info-title mb-1">Email</h3>
+                  <p class="contact_info-text">{{email}}</p>
+                </li>
+                <li class="contact_info col-xs-4 col-md-12 ">
+                  <h3 class="contact_info-title mb-1">Adresse</h3>
+                  <p class="contact_info-text">{{adress}}</p>
+                </li>
+             </ul>
+          </address>       
+            <div class="contact_form_container col-lg-8 offset-lg-1 wow fadeIn" data-wow-offset="100">
+            <form class="contact-form row mb-5" method="post" action="#">
+               <div class="col-md-6">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Votre nom">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre email">
+                  <input type="text" class="form-control" name="subject" id="c" placeholder="Objet">
+               </div>
+               <div class="col-md-6">
+                  <textarea class="form-control" name="message" id="message" rows="25" cols="10" placeholder="Message ..."></textarea>
+                  <input type="submit" class="btn btn-default submit-btn form_submit" value="Envoyer">          
+               </div>
+            </form>
+          </div>
+        </div>
+      </section><!-- /#contact -->
+    </main>
+    <footer class="footer container-fluid px-0" id="footer">
+      <div class="container wow fadeIn" data-wow-offset="100">
+        <header>
+          <figure class="footer_logo col-md-12 text-center wow tada" data-wow-delay="3s">
+            <img src="{{logo}}" alt="Logo {{author}}" title="Logo de {{author}}" height="100">
+          </figure><!-- /.footer_logo -->
+          <h2 class="social-title text-center">Suivez moi sur les réseaux sociaux</h2>
+        </header>
+        <section class="social container pt-3">	
+          <social-list></social-list> 
+        </section><!-- /.social -->
+        <section class="copyright col-md-12 pt-5 text-center">
+          <p class="copyright_text">
+            &copy; <a href="mailto:{{email}}" target="_blank">{{author}}</a> 2018 | tous droits réservés
+          </p>
+        </section><!-- /.copyright -->
+      </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </body>
+</html>				
