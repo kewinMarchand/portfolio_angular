@@ -39,7 +39,7 @@ new WOW().init();
 
 var app = angular.module("myApp", []);
 app.controller("PortfolioCtrl", function($scope) {
-	$scope.logo = 'https://designweb.alwaysdata.net/wp-content/uploads/2018/01/avatar_kma-1.png';
+	$scope.logo = '//designweb.alwaysdata.net/wp-content/uploads/2018/01/avatar_kma-1.png';
 	$scope.author = 'Kewin Marchand';
 	$scope.authorName = 'Marchand';
 	$scope.authorSurname = 'Kewin';
@@ -237,27 +237,27 @@ app.component('langageList', {
 		this.langages = [
 			{
 			title: 'Node.js',
-			src:'https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png', 
+			src:'//nodejs.org/static/images/logos/nodejs-new-pantone-black.png', 
 			},
 			{
 			title: 'Visual studio',
-			src:'https://i.pinimg.com/originals/3a/d4/86/3ad4869c1648d61506f871dc46ba3f45.png', 
+			src:'//i.pinimg.com/originals/3a/d4/86/3ad4869c1648d61506f871dc46ba3f45.png', 
 			},
 			{
 			title: 'SASS',
-			src:'https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png', 
+			src:'//sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png', 
 			},
 			{
 			title: 'Vue.js',
-			src:'http://blog.xebia.fr/wp-content/uploads/2016/11/vuejs-logo-5-300x300.png', 
+			src:'//blog.xebia.fr/wp-content/uploads/2016/11/vuejs-logo-5-300x300.png', 
 			},
 			{
 			title: 'A-frame',
-			src:'https://cdn-images-1.medium.com/max/512/1*oORAGqcJB-2MBl0Dt65D4Q.png', 
+			src:'//cdn-images-1.medium.com/max/512/1*oORAGqcJB-2MBl0Dt65D4Q.png', 
 			},
 			{
 			title: 'jQuery',
-			src:'http://src.iut-troyes.univ-reims.fr/~mmid114b09/jquery/images/logo_jquery.png', 
+			src:'//src.iut-troyes.univ-reims.fr/~mmid114b09/jquery/images/logo_jquery.png', 
 			},
 			{
 			title: 'Angular.js',
@@ -265,11 +265,11 @@ app.component('langageList', {
 			},
 			{
 			title: 'Suite Adobe',
-			src:'http://logok.org/wp-content/uploads/2014/09/Adobe-logo-880x660.png', 
+			src:'//logok.org/wp-content/uploads/2014/09/Adobe-logo-880x660.png', 
 			},
 			{
 			title: 'GitHub',
-			src:'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', 
+			src:'//assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png', 
 			}
 		]
 	}	
@@ -292,53 +292,53 @@ app.component('workList', {
 	controller: function workListController() {
 			this.works = [
 				{
-					url: 'https://www.eureka-interim.fr/',
+					url: '//www.eureka-interim.fr/',
 					type:'site web',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-eureka.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/mockup-eureka.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
-					url: 'https://www.lvdenvironnement.fr/',
+					url: '//www.lvdenvironnement.fr/',
 					type:'site web',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-lvd.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/mockup-lvd.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
-					url: 'http://srhcompetences.com/',
+					url: '//srhcompetences.com/',
 					type:'site web',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-srh.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/mockup-srh.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
-					url: 'http://www.winov-conseil.fr/',
+					url: '//www.winov-conseil.fr/',
 					type:'site web',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-winov.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/mockup-winov.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				/*
 				{
-					url: 'https://designweb.alwaysdata.net/',
+					url: '//designweb.alwaysdata.net/',
 					type:'site web',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-dwsalon.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/mockup-dwsalon.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				*/
 				{
-					url: 'http://www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
+					url: '//www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
 					type:'Conception 3D',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
 					title: 'illustration',
 					subtitle: 'Sketchup, photoshop'
 				},
 				{
-					url: 'http://www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
+					url: '//www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
 					type:'illustration',
-					img: 'http://www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
+					img: '//www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
 					title: 'illustration',
 					subtitle: 'illustrator'
 				},
