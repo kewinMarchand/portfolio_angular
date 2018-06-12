@@ -294,28 +294,28 @@ app.component('workList', {
 				{
 					url: '//www.eureka-interim.fr/',
 					type:'site web',
-					img: '//www.kewinmarchand.fr/img/portfolio/mockup-eureka.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-eureka.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
 					url: '//www.lvdenvironnement.fr/',
 					type:'site web',
-					img: '//www.kewinmarchand.fr/img/portfolio/mockup-lvd.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-lvd.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
 					url: '//srhcompetences.com/',
 					type:'site web',
-					img: '//www.kewinmarchand.fr/img/portfolio/mockup-srh.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-srh.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
 				{
 					url: '//www.winov-conseil.fr/',
 					type:'site web',
-					img: '//www.kewinmarchand.fr/img/portfolio/mockup-winov.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-winov.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
@@ -323,7 +323,7 @@ app.component('workList', {
 				{
 					url: '//designweb.alwaysdata.net/',
 					type:'site web',
-					img: '//www.kewinmarchand.fr/img/portfolio/mockup-dwsalon.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/mockup-dwsalon.jpg',
 					title: 'site web',
 					subtitle: 'HTML, CSS, Wordpress'
 				},
@@ -331,14 +331,14 @@ app.component('workList', {
 				{
 					url: '//www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
 					type:'Conception 3D',
-					img: '//www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/massif-aeroport.jpg',
 					title: 'illustration',
 					subtitle: 'Sketchup, photoshop'
 				},
 				{
 					url: '//www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
 					type:'illustration',
-					img: '//www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
+					img: 'http://www.kewinmarchand.fr/img/portfolio/illustration-boule.jpg',
 					title: 'illustration',
 					subtitle: 'illustrator'
 				},
